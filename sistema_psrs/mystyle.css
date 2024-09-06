@@ -1,0 +1,651 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --light-red: #E1364B;
+    --text-input-field: #E5E5E5;
+    --light-green: #33D97F;
+    --card-registrar: #d4f3c0;
+    --card-modificar: #FAE7E7;
+    --card-buscar: #ffe7cb;
+    --card-mostrar: #C5EDED;
+    --encabezado-table: #7E1B1B;
+    --border-estado: #9b9797;
+    --boton-crear-usuario: #cbecdc;
+    --sm: 16px;
+    --md: 18px;
+    --lg: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+.principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: #1B2752;
+    color: white;
+  }
+.navbar-left ul, .navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+.navbar-left ul li:nth-child(1){
+    margin-right: 15px;
+}
+.navbar-icon{
+    display: flex;
+    align-items: center;
+}
+.navbar-title{
+    font-size: var(--lg);
+}
+.navbar-left ul li img{
+    width: 60px;
+}
+.navbar-right ul li:nth-child(1){
+    margin-right: 30px;
+}
+.navbar-right ul li a{
+    color: var(--black);
+    text-decoration: none;
+    display: inline-block;
+}
+.navbar-welcome{
+    font-size: var(--md);
+}
+.navbar-signout{
+    font-size: var(--sm);
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    padding: 8px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form-container-login{
+    width: 300px;
+    height: 400px;
+}
+.title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: var(--sm) ;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.input-dni{
+    margin-bottom: 22px;
+}
+.boton-principal{
+    background-color: var(--light-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 40px;
+}
+.login-button{
+    margin-top: 30px;
+}
+
+
+/*                    */
+
+.panel-container{
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-container{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container a p{
+    font-weight: bold;
+}
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #33D97F;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--black);
+}
+.panel-container div a img{
+    width: 100px;
+}
+
+.card-color-registrar{
+   background-color: var(--card-registrar); 
+}
+.card-color-modificar{
+    background-color: var(--card-modificar); 
+ }
+ .card-color-buscar{
+    background-color: var(--card-buscar); 
+ }
+ .card-color-mostrar{
+    background-color: var(--card-mostrar); 
+ }
+
+
+
+/*
+reciclador_registrar_1
+reciclador_modificar_1
+reciclador_buscar_1
+centro_acopio_1
+crear_cuenta_1
+panel_adminstrador
+*/
+
+.form-container-registrar{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px
+}
+.container-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.label-registrar{
+    width: 40%;
+    font-size: var(--sm) ;
+    font-weight: bold;
+}
+.input-registrar{
+    width: 60%;
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+}
+.boton-registrar{
+    width: 40%;
+}
+.boton-right{
+    width: 40%;
+}
+
+/*  reciclador_registrar_2     */
+.form-container-registrar-2{
+    width: 450px;
+    height: 500px;
+    margin-top: 20px
+}
+.container-input-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.label-registrar-2{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--sm) ;
+    font-weight: bold;
+}
+.input-registrar-2{
+    width: 50%;
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+}
+.container-table{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.table-fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.fila-final{
+    margin-bottom: 0;
+}
+
+.celda-size{
+    width: 20%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table-fila input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    font-size: var(--sm);
+    padding: 6px;
+}
+.celda-size p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/*popup reciclador*/
+
+.form-container-popup{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container-popup img{
+    width: 150px;
+    height: 150px;
+}
+.popup-text{
+    font-size: var(--md);
+    margin-bottom: 30px;
+}
+.boton-secundario{
+    background-color: var(--light-red);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 40%;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* crear_cuenta_1 */
+
+.boton-select{
+    width: 40%;
+}
+
+/* panel_adminstrador */
+
+.navbar-crear-usuario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: var(--boton-crear-usuario);
+}
+.navbar-crear-usuario img{
+    width: 25px;
+}
+.boton-crear-usuario{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: none;
+    color: var(--bl);
+    padding: 5px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 35px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.label-titulo{
+    width: 100%;
+    text-align: center;
+    font-size: var(--sm) ;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.container-fecha{
+    margin-bottom: 20px;
+}
+.container-fecha label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input-radio{
+    margin-right: 10px;
+}
+.input-date{
+    width: 45%;
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+    margin-left: 10px;
+}
+
+/* reciclador_buscar_2_tabla*/
+.form-container-buscar{
+    width: 600px;
+    height: max-content;
+}
+
+.container-table-lista table{
+    width: 100%;
+    
+}
+.container-table-lista table tr{
+    height: 25px;
+}
+.tipo-material th{
+    width: 19%;
+}
+.container-table-lista table th{
+    background-color: var(--encabezado-table);
+    color: var(--white);
+}
+.container-table-lista table td{
+    text-align: center;
+    background-color: var(--text-input-field);
+}
+
+.container-input-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.label-registrar-3{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--sm) ;
+    font-weight: bold;
+}
+.input-registrar-3{
+    width: 30%;
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+}
+.boton-registrar-2{
+    width: 30%;
+}
+
+
+/* reciclador_mostrar_1_tabla*/
+.form-container-mostrar{
+    width: 800px;
+    height: 500px;
+}
+.table-cabecera-codigo{
+    width: 20%;
+}
+.table-cabecera-fecha{
+    width: 20%;
+}
+.table-cabecera-tipo{
+    width: 60%;
+}
+.tipo-material-2 th{
+    width: 15%;
+}
+.boton-registrar-3{
+    width: 20%;
+}
+/* centro_acopio_2 */
+
+.container-input-4 {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-container-mostrar-2{
+    width: 1000px;
+    height: 500px;
+}
+.table-cabecera-codigo-2{
+    width: 15%;
+}
+.table-cabecera-fecha-2{
+    width: 15%;
+}
+.table-cabecera-tipo-2{
+    width: 55%;
+}
+.table-cabecera-estado{
+    width: 15%;
+}
+.tipo-material-3 th{
+    width: 13%;
+}
+table tbody a{
+    display: inline-block;
+}
+table tbody img{
+    height: 28px;
+}
+.boton-registrar-4{
+    width: 15%;
+}
+
+/* centro_acopio_3 */
+
+.form-container-popup-estado{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-estado);
+    border-radius: 30px;
+}
+.popup-title{
+    text-transform: uppercase;
+    font-size: var(--md);
+    margin-bottom: 30px;
+}
+.container-input-estado{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-estado{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.label-estado{
+    width: 25%;
+}
+.label-estado-align{
+    display: flex;
+    align-items: center;
+}
+.select-estado{
+    width: 75%;
+}
+.estado{
+    width: 66%;
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+}
+.textarea-estado{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--sm);
+    padding: 6px;
+    height: 100px;
+}
+.container-boton-secundario{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* reporte_fecha */
+.form-container-registrar-3{
+    width: 500px;
+    height: max-content;
+    margin-top: 20px
+}
+.container-boton-reporte{
+    margin-bottom: 30px;
+}
+.container-reporte-fecha{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container-reporte-fecha table{
+    width: 70%;
+}
+.reporte-tipo{
+    width: 30%;
+}
+.container-reporte-fecha table tr{
+    height: 25px;
+}
+.container-reporte-fecha table th{
+    background-color: var(--encabezado-table);
+    color: var(--white);
+}
+.container-reporte-fecha table td{
+    text-align: center;
+    background-color: var(--text-input-field);
+}
+
+/* reporte_estado */
+.form-container-registrar-4{
+    width: 700px;
+    height: max-content;
+    margin-top: 20px
+}
+.container-reporte-estado{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container-reporte-estado table{
+    width: 70%;
+}
+
+.container-reporte-estado table th{
+    background-color: var(--encabezado-table);
+    color: var(--white);
+    width: 45%;
+}
+.container-reporte-estado table td{
+    text-align: center;
+    background-color: var(--text-input-field);
+    width: 55%;
+}
+.container-reporte-estado table tr{
+    height: 25px;
+}
+.container-reporte-estado table .fila-comentario{
+    height: 60px;
+}
+
+
+
+
+
+.tipo-material-5{
+    width: 15%;
+}
+.table-cabecera-codigo-5{
+    width: 15%;
+}
+.table-cabecera-fecha-5{
+    width: 15%;
+}
+.table-cabecera-tipo-5{
+    width: 58%;
+}
+.table-cabecera-peso{
+    width: 12%;
+}

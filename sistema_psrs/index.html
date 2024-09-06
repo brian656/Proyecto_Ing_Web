@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="principal">
+        <nav>
+            <div class="navbar-left">
+              <ul>
+                <li class="navbar-icon">
+                    <img src="iconos/logo_psrs.png" alt="logo_psrs">
+                </li>
+                <li class="navbar-title">PSRS</li>
+              </ul>
+            </div>
+        </nav>
+        <div class="container">
+
+          <div class="form-container">
+            <h1 class="title">Login</h1>
+            <form name="login" action="tipo_rol.php" class="form" method="POST">
+                <label for="dni" 
+                class="label">DNI
+                </label>
+                <input type="text" 
+                id="dni"
+                name="dni" 
+                pattern="[0-9]{8}" 
+                maxlength="8"
+                class="input input-dni" required>
+
+                <label for="contraseña" 
+                class="label">Contraseña</label>
+                <input type="password" 
+                id="contraseña"
+                name="contraseña" 
+                class="input input-contraseña" required>
+
+                <input type="submit" name="submit" 
+                value="Iniciar sesión" 
+                class="boton-principal login-button">
+                
+            </form>
+          </div>
+
+        </div>
+    </div>
+</body>
+</html>

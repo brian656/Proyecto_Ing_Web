@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="principal">
+        <nav>
+            <div class="navbar-left">
+              <ul>
+                <li class="navbar-icon">
+                    <img src="iconos/logo_psrs.png" alt="logo_psrs">
+                </li>
+                <li class="navbar-title">PSRS</li>
+              </ul>
+            </div>
+
+            <div class="navbar-right">
+              <ul>
+                <li class="navbar-welcome">Bienvenido(a), nombre_usuario</li>
+                <li class="navbar-signout">
+                  <a href="">Cerrar sesión</a>
+                </li>
+              </ul>
+            </div>
+            
+        </nav>
+        <div class="navbar-crear-usuario">
+          <a href="" class="boton-crear-usuario"><img src="./iconos/plus.png" alt="icono_agregar"> Crear nuevo usuario</a>
+        </div>
+
+
+        <div class="container">
+
+          <div class="form-container-registrar-3">
+            <h1 class="title">Reporte</h1>
+            <form name="login" action="consultar_rol.php" class="form" method="POST">
+                
+                <div class="container-input">
+                    <label for="opcion" 
+                      class="label-titulo">Seleccione una opción
+                    </label>
+                </div>
+
+                <div class="container-fecha">
+                  <label>
+                    <input class="input-radio" type="radio" name="name" value="fecha">Fecha 
+                    <input class="input-date" required type="date" name="fecha" on >
+                  </label>
+                </div>
+
+                <div class="container-fecha">
+                  <label>
+                    <input class="input-radio" type="radio" name="name" value="estado">Estado 
+                    <select class="boton-select input-date" required id=estado name="estado">
+                      <option value="ninguna">Seleccione una opción</option>
+                      <option value="Sin entregar"> Sin entregar</option>
+                      <option value="Completo"> Completo</option>
+                      <option value="Incompleto"> Incompleto</option>
+                      </select>
+                  </label>
+                </div>             
+
+                <div class="container-boton container-boton-reporte">
+                    <input type="submit" name="submit" 
+                    value="Buscar" 
+                    class="boton-principal boton-registrar">
+                </div>
+
+                <div class="container-reporte-fecha">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Código de casa</th>
+                                <td>-</td>
+                            </tr>
+                        </thead>
+        
+                        <thead>                     
+                            <tr>
+                                <th rowspan="4" class="reporte-tipo reporte-residuo">Tipo de residuo</th>
+                                <th class="reporte-tipo">Papel</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th class="reporte-tipo">Cartón</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th class="reporte-tipo">Vidrio</th>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th class="reporte-tipo">Plástico</th>
+                                <td>-</td>
+                            </tr>
+                        </thead>
+                        
+                        <thead>
+                            <tr>
+                                <th colspan="2">Peso total</th>
+                                <td>-</td>
+                            </tr>
+                        </thead>
+                        
+                    </table>
+                </div>
+
+            </form>
+          </div>
+
+        </div>
+    </div>
+</body>
+</html>
